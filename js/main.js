@@ -51,14 +51,23 @@ function movePlayer(e) {
                 y2 : 10,
                 speed : 8
             }
+            
+            let laser = document.createElement('audio');
+        laser.src = "audio/laser.mp3";
+        document.body.appendChild(laser);
+        
+        laser.addEventListener('ended',() => {
+            document.body.removeChild(laser);
+        });
+        
+        laser.play();
         
         
         bullets.push(newBullet);
     }
     
     window.addEventListener('keydown', movePlayer);
-    
- window.requestAnimationFrame(draw);
+    window.requestAnimationFrame(draw);
     
     theCanvas.addEventListener('click', createBullet);
     

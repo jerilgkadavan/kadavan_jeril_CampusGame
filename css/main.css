@@ -11,3 +11,8 @@ border: thin solid black;
 .hide-me {
     display: none;
 }
+
+button {
+    margin: 0 8px;
+    user-select: none;
+}

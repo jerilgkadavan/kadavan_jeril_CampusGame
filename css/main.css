@@ -1,0 +1,13 @@
+body {
+    text-align: center; user-select: none;
+}
+
+canvas { position: relative;
+border: thin solid black;
+    display: block;
+    margin: 0 auto;
+}
+
+.hide-me {
+    display: none;
+}
